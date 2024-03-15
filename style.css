@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
@@ -30,6 +29,10 @@ body {
   padding: 0;
 }
 
+h3 {
+  font-size: 36px;
+}
+
 .layout-component h2,
 .layout-component h3,
 .layout-component h4,
@@ -37,11 +40,89 @@ body {
   margin: 0;
 }
 
+.layout-component h2,
+.layout-component h3,
+.layout-component h4,
+.layout-component .heading {
+  font-family: "montserrat";
+}
+
+.title-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-with-icon > img {
+  height: 56px;
+}
+
+.player-section {
+  background: var(--section-bg);
+  padding: 40px;
+  border-radius: var(--border-radius-l);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.player-item {
+  background: linear-gradient(213deg, #fb9e48 0.11%, #d63636 100.02%);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.player-item > img {
+  width: 100%;
+}
+
+.player-name-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  height: 25%;
+}
+
+.player-name-container > span {
+  font-family: "montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+}
+
 .layout-component {
   color: var(--light-primary);
   display: block;
   margin: 0 auto;
-  font-family: "Montserrat";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 section {
@@ -52,7 +133,7 @@ section {
 h2 {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 56px;
   cursor: default;
 }
 
@@ -120,7 +201,6 @@ a.schedule-item:hover,
   padding: 4px 8px;
   font-size: 12px;
   line-height: 16px;
-  font-family: "Inter";
   font-weight: 600;
 }
 
@@ -141,6 +221,8 @@ section.about-event {
 
 .event-info {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .events {
@@ -151,7 +233,8 @@ section.about-event {
 .event-item {
   width: 100%;
   height: 244px;
-  background: url("https://images.chesscomfiles.com/uploads/ad_image/18125.b4bef880.jpg") no-repeat center / cover;
+  background: url("https://images.chesscomfiles.com/uploads/ad_image/18125.b4bef880.jpg")
+    no-repeat center / cover;
   margin-bottom: 16px;
   border-radius: var(--border-radius-l);
   overflow: hidden;
@@ -221,21 +304,54 @@ section.about-event {
   font-weight: 600;
   margin-top: 4px;
   color: var(--description-text);
-  font-family: "Inter";
 }
 
 .event-card {
-  width: 66.66%;
-  height: 504px;
+  width: 100%;
+  height: fit-content;
   border-radius: var(--border-radius-l);
   overflow: hidden;
-  position: relative;
   border-bottom: 3px solid #1b1a18;
+  display: flex;
 }
 
-.event-card .background {
+.event-card > img {
+  background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+#peekCardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.peekCard {
+  background-color: var(--section-bg);
+  display: flex;
+  gap: 16px;
+  border-radius: 5px;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.peekCardIconContainer {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.peekCardIcon {
+  max-height: 22px;
+}
+
+.peekCardText {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white80);
 }
 
 .logo {
@@ -263,7 +379,8 @@ section.about-event {
 }
 
 .event-banner {
-  background: #0f4b4d;
+  background-image: url(https://images.chesscomfiles.com/uploads/ad_image/18299.2ae0b2d7.jpg);
+  background-size: cover;
   display: flex;
   box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.4) inset;
   cursor: default;
@@ -278,7 +395,7 @@ section.about-event {
 
 .event-banner h3 {
   font-size: 31px;
-  margin-bottom: 16px !important;
+  margin-bottom: 0px !important;
   font-weight: 800;
 }
 
@@ -319,8 +436,9 @@ section.about-event {
   padding: 40px;
   border-radius: var(--border-radius-l);
   margin-right: 20px;
-  /* display: flex;
-    flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .schedule-table {
@@ -328,6 +446,7 @@ section.about-event {
   grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin-top: 24px;
+  width: 100%;
 }
 
 .schedule-item {
@@ -340,29 +459,31 @@ section.about-event {
   border-radius: var(--border-radius-m);
   box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.4) inset;
   cursor: pointer;
+  gap: 5px;
 }
 
 .schedule-item.is-active {
   background: #5d9948;
 }
 
-.schedule-item:last-of-type {
+.schedule-item:last-of-type,
+.schedule-item:first-of-type {
   grid-column: span 2;
 }
 
 .schedule-item h4 {
-  font-size: 17px;
+  font-size: 28px;
   text-align: center;
-  line-height: 24px;
+  line-height: 1em;
 }
 
 .event-date {
   color: var(--description-text);
-  font-size: 13px;
-  margin-top: 4px;
+  font-size: 14px;
+  margin-top: 8px;
   font-weight: 600;
   line-height: 16px;
-  font-family: "Inter";
+  text-align: center;
 }
 
 .prize {
@@ -434,7 +555,6 @@ section.about-event {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.72);
   cursor: default;
-  font-family: "Inter";
 }
 
 .accordion {
@@ -445,7 +565,7 @@ section.about-event {
   display: none;
 }
 
-.accordion-item input:checked~article {
+.accordion-item input:checked ~ article {
   transition: max-height 0.2s ease-in-out;
   max-height: 640px;
   height: max-content;
@@ -462,11 +582,11 @@ section.about-event {
   margin-bottom: 0;
 }
 
-.accordion-item input:checked+label {
+.accordion-item input:checked + label {
   margin-bottom: 24px;
 }
 
-.accordion-item input:checked+label img {
+.accordion-item input:checked + label img {
   transform: rotate(180deg);
   transition: transform 0.1s ease-in-out;
 }
@@ -492,7 +612,6 @@ section.about-event {
   max-height: 0;
   overflow: hidden;
   cursor: default;
-  font-family: "Inter";
 }
 
 .accordion-content ul {
@@ -514,13 +633,6 @@ section.about-event {
   .event-info {
     flex-direction: column;
     align-items: center;
-  }
-
-  .event-card {
-    order: -1;
-    margin-bottom: 16px;
-    width: 100%;
-    height: 230px;
   }
 
   .events {
@@ -579,7 +691,6 @@ section.about-event {
 }
 
 @media screen and (max-width: 960px) {
-
   section.event-banner,
   .schedule,
   section.about-event {
@@ -610,10 +721,12 @@ section.about-event {
   .accent {
     transform: translate(0%, -10%);
   }
+  .player-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 640px) {
-
   .events,
   .event-banner {
     flex-direction: column;
@@ -626,6 +739,10 @@ section.about-event {
   .event-item:first-of-type {
     border-bottom: 3px solid rgba(0, 0, 0, 0.8);
     box-shadow: none;
+  }
+
+  .player-name-container > span {
+    font-size: 12px;
   }
 
   .event-item {
@@ -660,6 +777,10 @@ section.about-event {
     height: 119px;
   }
 
+  h3 {
+    font-size: 20px;
+  }
+
   .event-banner h3 {
     font-size: 20px;
     line-height: 30px;
@@ -685,7 +806,6 @@ section.about-event {
   }
 
   .schedule-item .event-date {
-    order: -1;
     margin-top: 0;
     margin-bottom: 4px;
   }
@@ -731,7 +851,6 @@ section.about-event {
     box-shadow: 0px -1px 0px 0px #0000001a inset;
     margin-bottom: 24px;
     cursor: pointer;
-    font-family: "Inter";
   }
 
   .event-btn-play img {
@@ -739,11 +858,7 @@ section.about-event {
   }
 
   .schedule-table {
-    grid-template-columns: 1fr;
-  }
-
-  .schedule-item:last-of-type {
-    grid-column: auto;
+    grid-template-columns: 1fr 1fr;
   }
 
   .accent {
@@ -762,14 +877,6 @@ section.about-event {
     top: 10px;
     left: 50%;
     transform: translate(-50%, 0);
-  }
-
-  .short-date {
-    display: none;
-  }
-
-  .long-date {
-    display: block;
   }
 }
 

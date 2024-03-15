@@ -1,179 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Champions chess tour</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <title>Champions chess tour</title>
-</head>
-
-<body>
-  <div class="layout-component">
-    <section class="event-info">
-      <div class="events">
-        <div class="event-item">
-          <a style="cursor: inherit">
-            <div class="event-item-visual has-tag">
-              <div class="tag-live">
-                <span>UPCOMING</span>
-              </div>
+  <body>
+    <div class="layout-component">
+      <section class="event-info">
+        <div class="event-card">
+          <img
+            src="https://images.chesscomfiles.com/uploads/ad_image/18297.a60412ac.jpg"
+          />
+        </div>
+        <div id="peekCardsContainer" class="fade-in-element">
+          <div class="peekCard">
+            <div class="peekCardIconContainer">
+              <img
+                src="https://images.chesscomfiles.com/uploads/ad_image/17415.c733fbad.png"
+                class="peekCardIcon"
+              />
             </div>
-            <div class="event-item-text">
-              <span class="event-item-title">Event 2</span>
-              <span class="event-item-date short-date">May 8 - 15</span>
-              <span class="event-item-date long-date">May 8 - 15</span>
+            <span class="peekCardText">April 3-22</span>
+          </div>
+          <div class="peekCard">
+            <div class="peekCardIconContainer">
+              <img
+                src="https://images.chesscomfiles.com/uploads/ad_image/17413.bf44e64e.png"
+                class="peekCardIcon"
+              />
             </div>
-          </a>
-        </div>
-        <div class="event-item is-active">
-          <a href="https://www.chess.com/events/info/2024-champions-chess-tour-chessable-masters" target="_blank">
-            <img src="https://images.chesscomfiles.com/uploads/ad_image/18155.3c35ada6.png" width="268" height="90"
-              alt="event-logo" />
-            <div class="gradient"></div>
-            <div class="event-item-text">
-              <span class="event-item-title">Chessable Masters</span>
-              <span class="event-item-date">Jan 31 - Feb 7</span>
+            <span class="peekCardText">€500,000</span>
+          </div>
+          <div class="peekCard">
+            <div class="peekCardIconContainer">
+              <img
+                src="https://images.chesscomfiles.com/uploads/ad_image/17413.bf44e64e.png"
+                class="peekCardIcon"
+              />
             </div>
-          </a>
+            <span class="peekCardText">8 players</span>
+          </div>
+          <div class="peekCard">
+            <div class="peekCardIconContainer">
+              <img
+                src="https://images.chesscomfiles.com/uploads/ad_image/17413.bf44e64e.png"
+                class="peekCardIcon"
+              />
+            </div>
+            <span class="peekCardText">Toronto, Canada</span>
+          </div>
         </div>
-      </div>
-      <div class="event-card">
-        <img class="background" src="https://images.chesscomfiles.com/uploads/ad_image/18159.3a3afd0c.jpg" height="504"
-          width="578" alt="background" />
-        <img class="logo" src="https://images.chesscomfiles.com/uploads/ad_image/18121.07b567fc.png" height="132"
-          width="399" alt="logo" />
-        <img class="accent" src="https://images.chesscomfiles.com/uploads/ad_image/18153.04fa66f1.png" height="218"
-          width="597" alt="accent" />
-        <img class="participants" src="https://images.chesscomfiles.com/uploads/ad_image/18127.f9ce5deb.png"
-          height="339" width="600" alt="participants" />
-      </div>
-    </section>
-    <section class="event-banner">
-      <img src="https://images.chesscomfiles.com/uploads/ad_image/18141.b19ccf64.png" height="133" width="112"
-        alt="cup" />
-      <div>
-        <h3>
-          The Champions Chess Tour is Chess.com's most important event series
-          of the year, with four online events and one live final.
-        </h3>
-      </div>
-    </section>
-    <section class="event-video">
-      <h2>Tournament Rules</h2>
-      <p>Allow Danny To Explain</p>
-      <iframe width="696" height="391" src="https://www.youtube.com/embed/55TSpqutoJ0" frameborder="0"
-        allowfullscreen></iframe>
-    </section>
-    <section class="event-schedule-prize">
-      <div class="schedule">
-        <h2>4 Events, 1 Final</h2>
-        <div class="schedule-table">
-          <a class="schedule-item" href="https://www.chess.com/events/info/2024-champions-chess-tour-chessable-masters"
-            target="_blank">
-            <h4>Chessable Masters</h4>
-            <span class="event-date short-date">Jan 31 - Feb 7</span>
-            <span class="event-date long-date">January 31 - February 7</span>
-          </a>
-          <a style="cursor: default" class="schedule-item is-active">
-            <h4>Event 2</h4>
-            <span class="event-date short-date">May 8 - 15</span>
-            <span class="event-date long-date">May 8 - May 15</span>
-          </a>
-          <a style="cursor: default" class="schedule-item">
-            <h4>Event 3</h4>
-            <span class="event-date short-date">July 17 - 24</span>
-            <span class="event-date long-date">July 17 - July 24</span>
-          </a>
-          <a style="cursor: default" class="schedule-item">
-            <h4>Event 4</h4>
-            <span class="event-date short-date">Sep 25 - Oct 2</span>
-            <span class="event-date long-date">September 25 - October 2</span>
-          </a>
-          <a style="cursor: default" class="schedule-item">
-            <h4>Finals</h4>
-            <span class="event-date short-date">December 14 - 21</span>
-            <span class="event-date long-date">December 14 - December 21</span>
-          </a>
+      </section>
+      <section class="event-banner">
+        <img
+          src="https://images.chesscomfiles.com/uploads/ad_image/18303.fdf12a3e.png"
+          height="133"
+          width="112"
+          alt="cup"
+        />
+        <div>
+          <h3>
+            The 2024 FIDE Candidates Tournament determines who will challenge
+            current world champion Ding Liren for the crown.
+          </h3>
         </div>
-      </div>
-      <div class="prize">
-        <img src="https://images.chesscomfiles.com/uploads/ad_image/18137.429eb58e.png" height="90" width="90"
-          alt="cup" />
-        <span class="amount">$1,700,000</span>
-        <span class="prize-text">Prize money</span>
-        <span class="event-prize-text">$300,000 Per Event</span>
-        <span class="final-prize-text">$500,000 For The Final</span>
-      </div>
-    </section>
-    <section class="about-event">
-      <div class="info-block">
-        <span class="heading">About the Tour</span>
-        <p class="info-text">
-          The Champions Chess Tour comprises four events and one live
-          in-person Final. With the very best players in the world and a $1.7
-          million prize fund, this is Chess.com's most important event of the
-          year.
-        </p>
-        <a href="https://www.chess.com/article/view/chesscom-event-rulebook#cct" target="_blank" class="event-btn">Learn
-          more</a>
-      </div>
-      <div class="accordion">
-        <div class="accordion-item">
-          <input id="ac-1" name="accordion-1" type="radio" />
-          <label for="ac-1">
-            <span>Prize Money</span>
-            <img src="https://images.chesscomfiles.com/uploads/ad_image/18135.996d2e30.png" width="24" height="24"
-              alt="expand" />
-          </label>
-          <article class="accordion-content">
-            <p>
-              The event features a $1,700,000 prize fund, with $300,000 for
-              each online event and $500,000 for the live Finals.
-            </p>
-          </article>
+      </section>
+      <section class="player-section">
+        <div class="title-container">
+          <div class="title-with-icon">
+            <img
+              src="https://images.chesscomfiles.com/uploads/ad_image/18295.db3872f9.png"
+            />
+            <h2>Players</h2>
+          </div>
+          <span class="info-text"
+            >Any titled player can join. There are regular appearances of GMs
+            Magnus Carlsen, Hikaru Nakamura, Alexandra Kosteniuk, Alireza
+            Firouzja, and more.</span
+          >
         </div>
-        <div class="accordion-item">
-          <input id="ac-2" name="accordion-1" type="radio" />
-          <label for="ac-2">
-            <span>The Format</span>
-            <img src="https://images.chesscomfiles.com/uploads/ad_image/18135.996d2e30.png" width="24" height="24"
-              alt="expand" />
-          </label>
-          <article class="accordion-content">
-            <p>
-              Players compete in the four online events for a spot in the live
-              Finals and CCT tour points. The player who wins the CCT Finals
-              is the tour's champion.
-            </p>
-          </article>
+        <div class="player-grid">
+          <div class="player-item">
+            <img
+              src="https://images.chesscomfiles.com/uploads/ad_image/18293.110e8e6a.png"
+              alt=""
+            />
+            <div class="player-name-container">
+              <span>GM Vidit Gujrathi</span>
+            </div>
+          </div>
+          <div class="player-item">
+            <img
+              src="https://images.chesscomfiles.com/uploads/ad_image/18293.110e8e6a.png"
+              alt=""
+            />
+            <div class="player-name-container">
+              <span>GM Vidit Gujrathi</span>
+            </div>
+          </div>
+          <div class="player-item">
+            <img
+              src="https://images.chesscomfiles.com/uploads/ad_image/18293.110e8e6a.png"
+              alt=""
+            />
+            <div class="player-name-container">
+              <span>GM Vidit Gujrathi</span>
+            </div>
+          </div>
+          <div class="player-item">
+            <img
+              src="https://images.chesscomfiles.com/uploads/ad_image/18293.110e8e6a.png"
+              alt=""
+            />
+            <div class="player-name-container">
+              <span>GM Vidit Gujrathi</span>
+            </div>
+          </div>
         </div>
-        <div class="accordion-item">
-          <input id="ac-3" name="accordion-1" type="radio" checked="" />
-          <label for="ac-3">
-            <span>Where To Watch</span>
-            <img src="https://images.chesscomfiles.com/uploads/ad_image/18135.996d2e30.png" width="24" height="24"
-              alt="expand" />
-          </label>
-          <article class="accordion-content">
-            <ul>
-              <li>Chess.com</li>
-              <li><a href="https://www.twitch.tv/chess" target="_blank">Twitch</a></li>
-              <li><a href="https://www.youtube.com/channel/UC5kS0l76kC0xOzMPtOmSFGw" target="_blank">YouTube</a></li>
-              <li>Television</li>
-            </ul>
-            <span>You can also check this site for daily reports on the
-              tournament and standings.</span>
-          </article>
+      </section>
+      <section class="event-schedule-prize">
+        <div class="schedule">
+          <h3>Prize money distribution</h3>
+          <div class="schedule-table">
+            <a
+              class="schedule-item"
+              href="https://www.chess.com/events/info/2024-champions-chess-tour-chessable-masters"
+              target="_blank"
+              style="
+                background-image: url(https://images.chesscomfiles.com/uploads/ad_image/18301.331bc4c5.jpg);
+                background-size: cover;
+              "
+            >
+              <h4 style="color: var(--color-leagues-champion, #f7c631)">1st</h4>
+              <span class="event-date short-date">€48,000</span>
+            </a>
+            <a
+              class="schedule-item"
+              style="
+                cursor: default;
+                background-image: url(https://images.chesscomfiles.com/uploads/ad_image/18305.eea2441c.jpg);
+                background-size: cover;
+              "
+            >
+              <h4 style="color: var(--color-leagues-silver, #d0e6fb)">2nd</h4>
+              <span class="event-date short-date">€36,000</span>
+            </a>
+            <a
+              style="
+                cursor: default;
+                background-image: url(https://images.chesscomfiles.com/uploads/ad_image/18305.eea2441c.jpg);
+                background-size: cover;
+              "
+              class="schedule-item"
+            >
+              <h4 style="color: var(--color-leagues-bronze, #cf8d1b)">3rd</h4>
+              <span class="event-date short-date">€24,000</span>
+            </a>
+            <a style="cursor: default" class="schedule-item">
+              <h4>Extra</h4>
+              <span class="event-date short-date"
+                >€3,500 for every half-point each player scores.</span
+              >
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-  </div>
-</body>
-
+        <div class="prize">
+          <img
+            src="https://images.chesscomfiles.com/uploads/ad_image/18137.429eb58e.png"
+            height="90"
+            width="90"
+            alt="cup"
+          />
+          <span class="amount">Winner</span>
+          <span class="prize-text"
+            >Gets to challenge the World Champion, Ding Liren</span
+          >
+          <span class="event-prize-text"
+            >And a prize pool of €500k will be split</span
+          >
+        </div>
+      </section>
+      <section class="about-event">
+        <div class="info-block">
+          <span class="heading">About the Candidates</span>
+          <p class="info-text">
+            The FIDE Candidates Tournament is one of the most important FIDE
+            events of the year. Players compete for the right to play in the
+            next FIDE World Championship match against current chess champion GM
+            Ding Liren.
+          </p>
+          <a
+            href="https://www.chess.com/article/view/chesscom-event-rulebook#cct"
+            target="_blank"
+            class="event-btn"
+            >Learn more</a
+          >
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <input id="ac-1" name="accordion-1" type="radio" />
+            <label for="ac-1">
+              <span>Prize Money</span>
+              <img
+                src="https://images.chesscomfiles.com/uploads/ad_image/18135.996d2e30.png"
+                width="24"
+                height="24"
+                alt="expand"
+              />
+            </label>
+            <article class="accordion-content">
+              <p>
+                The event features a $1,700,000 prize fund, with $300,000 for
+                each online event and $500,000 for the live Finals.
+              </p>
+            </article>
+          </div>
+          <div class="accordion-item">
+            <input id="ac-2" name="accordion-1" type="radio" />
+            <label for="ac-2">
+              <span>The Format</span>
+              <img
+                src="https://images.chesscomfiles.com/uploads/ad_image/18135.996d2e30.png"
+                width="24"
+                height="24"
+                alt="expand"
+              />
+            </label>
+            <article class="accordion-content">
+              <p>
+                Players compete in the four online events for a spot in the live
+                Finals and CCT tour points. The player who wins the CCT Finals
+                is the tour's champion.
+              </p>
+            </article>
+          </div>
+          <div class="accordion-item">
+            <input id="ac-3" name="accordion-1" type="radio" checked="" />
+            <label for="ac-3">
+              <span>Where To Watch</span>
+              <img
+                src="https://images.chesscomfiles.com/uploads/ad_image/18135.996d2e30.png"
+                width="24"
+                height="24"
+                alt="expand"
+              />
+            </label>
+            <article class="accordion-content">
+              <ul>
+                <li>Chess.com</li>
+                <li>
+                  <a href="https://www.twitch.tv/chess" target="_blank"
+                    >Twitch</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UC5kS0l76kC0xOzMPtOmSFGw"
+                    target="_blank"
+                    >YouTube</a
+                  >
+                </li>
+                <li>Television</li>
+              </ul>
+              <span
+                >You can also check this site for daily reports on the
+                tournament and standings.</span
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
