@@ -70,7 +70,7 @@ h3 {
 
 .top-buttons-container {
   display: flex;
-  gap: 24px;
+  gap: 12px;
 }
 
 .section-button {
@@ -704,10 +704,6 @@ section.about-event {
 
   .schedule-table {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .top-buttons-container {
-    gap: 12px;
   }
 
   .section-button {
