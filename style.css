@@ -99,7 +99,8 @@ a.section-button:visited {
   color: inherit !important;
 }
 
-.player-section {
+.player-section,
+.video-section {
   background: var(--section-bg);
   padding: 40px 24px;
   border-radius: var(--border-radius-l);
@@ -448,7 +449,8 @@ section.about-event {
 
 .prize-text,
 .event-prize-text,
-.final-prize-text {
+.final-prize-text,
+.subheading {
   font-size: 17px;
   text-align: center;
 }
@@ -457,8 +459,23 @@ section.about-event {
   padding: 0 14px;
 }
 
+.subheading {
+  margin-top: 4px;
+  margin-bottom: 32px;
+}
+
+.video-container {
+  max-height: 392px;
+  max-width: 696px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 .event-prize-text,
-.final-prize-text {
+.final-prize-text,
+.subheading {
   color: var(--white50);
   font-weight: 700;
   line-height: 24px;
